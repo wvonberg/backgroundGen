@@ -19,10 +19,10 @@ function setGradient() {
 }
 
 function generateColor() {
-    var random1 = "#" + Math.floor(Math.random()*16777215).toString(16);
-    var random2 = "#" + Math.floor(Math.random()*16777215).toString(16);
-    color1.setAttribute("value", random1);
-    color2.setAttribute("Value", random2);
+    var random1 = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+    var random2 = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+    color1.value = random1;
+    color2.value = random2;
     setGradient();
 }
 
